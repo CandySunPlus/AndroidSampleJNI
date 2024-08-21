@@ -1,0 +1,20 @@
+---
+# We'll use defaults from the LLVM style, but with 4 columns indentation.
+BasedOnStyle: Google
+Standard: Latest
+---
+Language: Cpp
+ColumnLimit: 120
+AlignAfterOpenBracket: BlockIndent
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowAllArgumentsOnNextLine: true
+BinPackArguments: false
+BinPackParameters: true
+IndentWidth: 4
+IndentAccessModifiers: false
+AccessModifierOffset: -4
+EmptyLineBeforeAccessModifier: LogicalBlock
+---
+Language: Proto
+# Don't format .proto files.
+DisableFormat: true
